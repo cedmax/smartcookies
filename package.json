@@ -1,0 +1,20 @@
+{
+  "name": "smartcookie",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "hogan-express": "^0.5.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^5.2.0",
+    "express-autoprefixer": "^4.0.3",
+    "postcss": "^4.1.16"
+  }
+}
