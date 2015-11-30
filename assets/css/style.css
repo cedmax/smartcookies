@@ -9,11 +9,16 @@
 	box-sizing:border-box;
 }
 
+ul, li {
+	margin:0;
+	padding:0;
+}
+
 @keyframes pulse {
-  to {
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01);
-  }
+	to {
+	-webkit-transform: scale(1.01);
+	transform: scale(1.01);
+	}
 }
 
 h1 > a {
@@ -53,7 +58,7 @@ body {
 	background-position: 20px 50px;
 }
 
-h1 span, a, a:hover {
+span, a, a:hover {
 	background: black;
 	color: white;
 	padding:0 10px;
@@ -94,3 +99,94 @@ footer a:nth-child(2){
 
 footer a[href="https://cedmax.com"] svg {width:15px;height:15px;}
 footer svg {fill:#fff; width:2vw;height:2vw;}
+
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+	transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+	left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+	left: 200px;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+	overflow-x: hidden;
+}
+/* Navigation Menu - Background */
+.navigation {
+	/* critical sizing and position styles */
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	overflow: auto;
+	
+	/* non-critical appearance styles */
+	list-style: none;
+	background: #111;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+	/* non-critical appearance styles */
+	width: 200px;
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #000;
+}
+
+.nav-item a {
+	/* non-critical appearance styles */
+	display: block;
+	padding: 1em;
+	font-size: 1.2em;
+	text-decoration: none;
+	transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover, .nav-item--selected a {
+	color: black;
+	background: white;
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+	/* Critical position and size styles */
+	min-height: 100%;
+	min-width: 100%;
+	position: relative;
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+/* Nav Trigger */
+.nav-trigger {
+	/* critical styles - hide the checkbox input */
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+	/* critical positioning styles */
+	position: fixed;
+	left: 15px; top: 15px;
+	z-index: 2;
+	
+	/* non-critical apperance styles */
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	background: black url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 30 30' fill='white'><path d='M0 0h30v6H0zm0 24h30v6H0zm0-12h30v6H0z'/></svg>") no-repeat 5px 5px;
+}

@@ -17,6 +17,12 @@ app.get( '/:pattern?', function ( req, res ) {
 		res.locals = find( data, function( genius ) {
 			return genius.pattern === pattern;
 		} );
+		res.locals.list = data.map(function(genius){
+			genius.selected = (genius.pattern===pattern);
+			return genius;
+		}).sort(function(a, b){
+			return a.pattern.localeCompare(b.pattern);
+		});
 		res.render( 'index' );
 	} else {
 		res.redirect( '/' + data[Math.floor( Math.random() * data.length )].pattern );
