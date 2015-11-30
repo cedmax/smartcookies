@@ -94,6 +94,10 @@ footer a:nth-child(1), footer a:nth-child(1):hover, footer a:nth-child(1):focus 
 	opacity:.4;
 }
 
+footer a:nth-child(1):hover, footer a:nth-child(1):focus {
+	opacity: 1;
+}
+
 footer a:nth-child(2){
 	bottom:15px;
 	right:15px;
