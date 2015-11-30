@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3",
-    "hogan-express": "^0.5.2"
+    "hogan-express": "^0.5.2",
+    "lodash.find": "^3.2.1"
   },
   "devDependencies": {
     "autoprefixer": "^5.2.0",
