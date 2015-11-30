@@ -16,8 +16,38 @@
 		"url": "http://elitedaily.com/life/culture/night-owls-creative-intelligent/686025/",
 		"image": "http://www.hypnotherapyoxford.org/hypnotherapy/sleep-problems/"
 	}, {
-		"pattern": "misophoniac",
+		"pattern": "misophonic",
 		"url": "http://www.telegraph.co.uk/food-and-drink/news/why-being-unable-to-stand-noisy-eaters-might-make-you-a-genius/",
 		"image": "http://www.unilad.co.uk/articles/getting-annoyed-by-chewing-noises-is-supposedly-a-genuine-psychiatric-disorder/"
-	}]
+	},{
+		"pattern": "curvy",
+		"url": "http://www.smartbeautyguide.com/news/body-contouring/research-shows-link-buttock-size-intelligence",
+		"image": "https://www.youtube.com/watch?v=LDZX4ooRsWs"
+	},{
+		"pattern": "blue-eyed",
+		"url": "http://www.telegraph.co.uk/news/science/science-news/3304030/Blue-eyes-could-mean-you-are-brainy.html",
+		"image": "https://en.wikipedia.org/wiki/Village_of_the_Damned_%281995_film%29"
+	},{
+		"pattern": "unemployed",
+		"url": "http://www.cbsnews.com/news/why-geniuses-dont-have-jobs/",
+		"image": "http://www.telegraph.co.uk/news/politics/8939755/Social-Attitudes-research-Britons-lose-sympathy-for-unemployed-as-they-become-more-self-reliant.html"
+	},{
+		"pattern": "sloppy",
+		"url": "http://www.mirror.co.uk/news/ampp3d/wearing-same-t-shirt-everyday-could-4585070",
+		"image": "http://www.trendysturvsblog.com/2014/11/why-i-wear-the-same-t-shirt-every-day-facebooks-mark-zuckerberg/"
+	}, {
+		"pattern": "sloppy",
+		"url": "http://www.mirror.co.uk/news/ampp3d/wearing-same-t-shirt-everyday-could-4585070",
+		"image": "https://en.wikipedia.org/wiki/Hesher_(film)"
+	}, {
+		"pattern": "neurotic",
+		"url": "http://www.sciencedaily.com/releases/2015/08/150827130134.htm",
+		"image": "http://farmamir.ru/2015/04/depressiya-ustalost-vozmozhno-vam-ne-xvataet-vitaminov/"
+	}, {
+		"pattern": "lefty",
+		"url": "http://www.newyorker.com/tech/elements/sinister-minds-are-left-handed-people-smarter",
+		"image": "https://en.wikipedia.org/wiki/The_Simpsons"
+	}
+	]
 }
+
