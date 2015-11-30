@@ -78,8 +78,19 @@ footer a {
 	font-size: 28px;
 	font-size: 2vw;
 	position: absolute;
-	bottom:10px;
-	right:10px;
 }
 
+footer a:nth-child(1), footer a:nth-child(1):hover, footer a:nth-child(1):focus {
+	left:10px;
+	bottom:15px;
+	background:none;
+}
+
+footer a:nth-child(2){
+	bottom:10px;
+	right:10px;
+	padding:0 3px;
+}
+
+footer a[href="https://cedmax.com"] svg {width:15px;height:15px;}
 footer svg {fill:#fff; width:2vw;height:2vw;}
