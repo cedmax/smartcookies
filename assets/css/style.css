@@ -16,20 +16,31 @@
   }
 }
 
-h1 a {
+h1 > a {
 	display: inline-block;
+	margin:5vw 0;
 	transform: translateZ(0);
 	backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
 	text-transform: uppercase;
 }
 
-h1 a:hover, h1 a:focus, h1 a:active {
+h1 > a:hover, h1 > a:focus, h1 > a:active {
 	animation-name: pulse;
 	animation-duration: 0.2s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+}
+
+h1 span:nth-of-type(2){
+	font-size:50%;
+	display: inline-block;
+}
+
+h1 span a, h1 span a:hover {
+	padding:0;
+	margin:0;
 }
 
 body {
@@ -57,10 +68,9 @@ h1 {
 	text-align: center;				
 }
 
-h1 span {
+h1 span:nth-of-type(1) {
 	transform: rotate(-1deg);
 	display: inline-block;
-	margin-bottom:6vw;
 }
 
 footer a {
@@ -68,7 +78,7 @@ footer a {
 	font-size: 2vw;
 	position: absolute;
 	bottom:10px;
+	right:10px;
 }
-footer a:nth-child(1) { left: 10px;}
-footer a:nth-child(2) { right: 10px;}
+
 footer svg {fill:#fff; width:2vw;height:2vw;}
