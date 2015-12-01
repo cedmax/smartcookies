@@ -43,6 +43,10 @@
 		"url": "http://www.newyorker.com/tech/elements/sinister-minds-are-left-handed-people-smarter",
 		"imgCredits": "https://en.wikipedia.org/wiki/The_Simpsons"
 	}, 
+	"firstborn": {
+		"url": "http://www.bbc.co.uk/news/health-34700739",
+		"imgCredits": "http://www.today.com/health/firstborn-girl-scientists-find-one-unexpected-disadvantage-t40921"
+	},
 	"404": {
 		"pattern": "so not like that!",
 		"url": "/",
