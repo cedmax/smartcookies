@@ -1,7 +1,7 @@
 var express = require( 'express' );
 var settings = require( './settings.json' );
-var data = require( './smartcookies.json' ).cookies;
-var find = require( 'lodash.find' );
+var data = require( './smartcookies.json' );
+var extend = require( 'lodash.assign' );
 
 var app = express();
 
@@ -11,21 +11,34 @@ app.enable( 'view cache' );
 app.engine( 'html', require( 'hogan-express' ));
 app.use( require( 'express-autoprefixer' )( { browsers: 'last 2 versions', cascade: false } )).use( express.static( __dirname + '/assets' ));
 
+function getContent ( data, patterns, reqPattern ) {
+	return extend( data[reqPattern], {
+		pattern: data[reqPattern].pattern || reqPattern,
+		image: data[reqPattern].image || reqPattern,
+		list: patterns.sort().splice( 1 ).map( function( pattern ) {
+			return {
+				pattern: pattern,
+				selected: ( pattern === reqPattern )
+			}
+		} )
+	} );
+}
+
 app.get( '/:pattern?', function ( req, res ) {
-	var pattern;
-	if (( pattern = req.params.pattern )) {
-		res.locals = find( data, function( genius ) {
-			return genius.pattern === pattern;
-		} );
-		res.locals.list = data.map(function(genius){
-			genius.selected = (genius.pattern===pattern);
-			return genius;
-		}).sort(function(a, b){
-			return a.pattern.localeCompare(b.pattern);
-		});
-		res.render( 'index' );
+	var reqPattern,
+		patterns = Object.keys( data );
+		
+	if (( reqPattern = req.params.pattern )) {
+		if ( !data[reqPattern] ) {
+			reqPattern = '404';
+			res.locals = getContent( data, patterns, reqPattern );
+			res.status( 404 ).render( 'index' );
+		} else {
+			res.locals = getContent( data, patterns, reqPattern );
+			res.render( 'index' );
+		}
 	} else {
-		res.redirect( '/' + data[Math.floor( Math.random() * data.length )].pattern );
+		res.redirect( '/' + patterns[Math.round( Math.random() * patterns.length )] );
 	}
 } );
 

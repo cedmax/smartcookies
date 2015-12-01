@@ -11,7 +11,7 @@
   "dependencies": {
     "express": "^4.13.3",
     "hogan-express": "^0.5.2",
-    "lodash.find": "^3.2.1"
+    "lodash.assign": "^3.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^5.2.0",
