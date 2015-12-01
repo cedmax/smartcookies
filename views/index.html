@@ -17,11 +17,13 @@
 			ga('send', 'pageview');
 		</script>
 
-		<ul class="navigation">
-			{{#list}}
-				<li class="nav-item{{#selected}} nav-item--selected{{/selected}}"><a href="/{{pattern}}">{{pattern}}</a></li>
-			{{/list}}
-		</ul>
+		<div class="navigation">
+			<ul>
+				{{#list}}
+					<li class="nav-item{{#selected}} nav-item--selected{{/selected}}"><a href="/{{pattern}}">{{pattern}}</a></li>
+				{{/list}}
+			</ul>
+		</div>
 
 		<input type="checkbox" id="nav-trigger" class="nav-trigger" />
 		<label for="nav-trigger"></label>

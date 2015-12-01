@@ -9,6 +9,11 @@
 	box-sizing:border-box;
 }
 
+html {
+	height:100%;
+	overflow: hidden;
+}
+
 ul, li {
 	margin:0;
 	padding:0;
@@ -124,7 +129,7 @@ footer svg {fill:#fff; width:2vw;height:2vw;}
 
 body {
 	/* Without this, the body has excess horizontal scroll when the menu is open */
-	overflow-x: hidden;
+	overflow: hidden;
 }
 /* Navigation Menu - Background */
 .navigation {
@@ -138,7 +143,7 @@ body {
 	left: 0;
 	z-index: 0;
 	overflow: auto;
-	
+	-webkit-overflow-scrolling:touch;
 	/* non-critical appearance styles */
 	list-style: none;
 	background: #111;
