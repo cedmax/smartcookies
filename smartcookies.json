@@ -47,6 +47,11 @@
 		"url": "http://www.bbc.co.uk/news/health-34700739",
 		"imgCredits": "http://www.today.com/health/firstborn-girl-scientists-find-one-unexpected-disadvantage-t40921"
 	},
+	"cat-lovers":{
+		"pattern": "cat lovers",
+		"url": "http://www.dailymail.co.uk/sciencetech/article-2643850/Does-pet-reveal-INTELLIGENCE-Cat-lovers-smarter-dog-owners-study-claims.html",
+		"imgCredits": "http://kathln.com/cat-themed-gift-ideas-for-cat-lovers/"
+	},
 	"404": {
 		"pattern": "so not like that!",
 		"url": "/",
