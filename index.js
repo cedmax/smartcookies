@@ -38,6 +38,7 @@ app.get( '/:pattern?', function ( req, res ) {
 			res.render( 'index' );
 		}
 	} else {
+		patterns.shift();
 		res.redirect( '/' + patterns[Math.round( Math.random() * patterns.length )] );
 	}
 } );
