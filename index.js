@@ -39,7 +39,7 @@ app.get( '/:pattern?', function ( req, res ) {
 		}
 	} else {
 		patterns.shift();
-		res.redirect( '/' + patterns[Math.round( Math.random() * patterns.length )] );
+		res.redirect( '/' + patterns[Math.floor( Math.random() * patterns.length )] );
 	}
 } );
 
