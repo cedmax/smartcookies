@@ -52,6 +52,10 @@
 		"url": "http://www.dailymail.co.uk/sciencetech/article-2643850/Does-pet-reveal-INTELLIGENCE-Cat-lovers-smarter-dog-owners-study-claims.html",
 		"imgCredits": "http://kathln.com/cat-themed-gift-ideas-for-cat-lovers/"
 	},
+	"discerning":{
+		"url": "http://www.sciencealert.com/scientists-have-found-a-link-between-low-intelligence-and-believing-philosophical-quotes",
+		"imgCredits": "http://suburbanmen.com/best-photos-of-the-week-pt-1-20150301/49826"
+	},
 	"404": {
 		"pattern": "so not like that!",
 		"url": "/",
