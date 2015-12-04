@@ -57,7 +57,6 @@ body {
 	margin: 0;
 	font-family:'bloxxx', Sans-Serif;
 	height: 100%;
-	background-position: 20px 50px;
 }
 
 span, a, a:hover {
@@ -185,6 +184,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: #333;
+	background-position: 20px 50px;
 }
 
 /* Nav Trigger */
