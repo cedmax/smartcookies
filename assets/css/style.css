@@ -5,8 +5,16 @@
 	font-style: normal;
 }
 
+@keyframes pulse {
+	to {
+		transform: scale(1.01);
+	}
+}
+
 * {
 	box-sizing:border-box;
+	margin:0;
+	padding:0;
 }
 
 html {
@@ -14,125 +22,14 @@ html {
 	overflow: hidden;
 }
 
-ul, li {
-	margin:0;
-	padding:0;
-}
-
-@keyframes pulse {
-	to {
-	-webkit-transform: scale(1.01);
-	transform: scale(1.01);
-	}
-}
-
-h1 > a {
-	display: inline-block;
-	margin:5vw 0;
-	transform: translateZ(0);
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	text-transform: uppercase;
-}
-
-h1 > a:hover, h1 > a:focus, h1 > a:active {
-	animation-name: pulse;
-	animation-duration: 0.2s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-
-h1 span:nth-of-type(2){
-	font-size:50%;
-	display: inline-block;
-}
-
-h1 span a, h1 span a:hover {
-	padding:0;
-	margin:0;
-}
-
 body {
-	margin: 0;
 	font-family:'bloxxx', Sans-Serif;
 	height: 100%;
-}
-
-span, a, a:hover {
-	background: black;
-	color: white;
-	padding:0 10px;
-}
-
-h1 {
-	flex:0 1 90%;
-	font-size: 50px;
-	font-size: 8vw;
-	padding: 30px 10px 0;
-	padding: 3vw 10px 0;
-	display: block;
-	text-align: center;				
-}
-
-h1 span:nth-of-type(1) {
-	transform: rotate(-1deg);
-	display: inline-block;
-}
-
-footer a {
-	font-size: 28px;
-	font-size: 2vw;
-	position: absolute;
-}
-
-footer a:nth-child(1), footer a:nth-child(1):hover, footer a:nth-child(1):focus {
-	left:15px;
-	bottom:15px;
-	background:none;
-	border-radius:50px;
-	width:30px;
-	height:30px;
-	padding-top:7px;
-	background: rgba(255,255,255,0.9);
-	opacity:.4;
-}
-
-footer a:nth-child(1):hover, footer a:nth-child(1):focus {
-	opacity: 1;
-}
-
-footer a:nth-child(2){
-	bottom:15px;
-	right:15px;
-	padding:0 3px;
-}
-
-footer a[href="https://cedmax.com"] svg {width:15px;height:15px;}
-footer svg {fill:#fff; width:2vw;height:2vw;}
-
-
-/* Make the Magic Happen */
-.nav-trigger + label, .site-wrap {
-	transition: left 0.2s;
-}
-
-.nav-trigger:checked + label {
-	left: 215px;
-}
-
-.nav-trigger:checked ~ .site-wrap {
-	left: 200px;
-	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-}
-
-body {
-	/* Without this, the body has excess horizontal scroll when the menu is open */
+	color:white;
 	overflow: hidden;
 }
-/* Navigation Menu - Background */
-.navigation {
-	/* critical sizing and position styles */
+
+#navigation {
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -143,21 +40,17 @@ body {
 	z-index: 0;
 	overflow: auto;
 	-webkit-overflow-scrolling:touch;
-	/* non-critical appearance styles */
 	list-style: none;
 	background: #111;
 }
 
-/* Navigation Menu - List items */
 .nav-item {
-	/* non-critical appearance styles */
 	width: 200px;
 	border-top: 1px solid #111;
 	border-bottom: 1px solid #000;
 }
 
-.nav-item a {
-	/* non-critical appearance styles */
+.nav-item a, .nav-item a:hover {
 	display: block;
 	padding: 1em;
 	font-size: 1.2em;
@@ -170,9 +63,22 @@ body {
 	background: white;
 }
 
-/* Site Wrapper - Everything that isn't navigation */
-.site-wrap {
-	/* Critical position and size styles */
+#nav-trigger {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+	position: fixed;
+	left: 15px; top: 15px;
+	z-index: 2;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	background: black url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 30 30' fill='white'><path d='M0 0h30v6H0zm0 24h30v6H0zm0-12h30v6H0z'/></svg>") no-repeat 5px 5px;
+}
+
+#wrapper {
 	min-height: 100%;
 	min-width: 100%;
 	position: relative;
@@ -187,22 +93,95 @@ body {
 	background-position: 20px 50px;
 }
 
-/* Nav Trigger */
-.nav-trigger {
-	/* critical styles - hide the checkbox input */
-	position: absolute;
-	clip: rect(0, 0, 0, 0);
+#nav-trigger + label, #wrapper {
+	transition: left 0.2s;
 }
 
-label[for="nav-trigger"] {
-	/* critical positioning styles */
-	position: fixed;
-	left: 15px; top: 15px;
-	z-index: 2;
-	
-	/* non-critical apperance styles */
-	height: 30px;
-	width: 30px;
-	cursor: pointer;
-	background: black url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 30 30' fill='white'><path d='M0 0h30v6H0zm0 24h30v6H0zm0-12h30v6H0z'/></svg>") no-repeat 5px 5px;
+#nav-trigger:checked + label {
+	left: 215px;
 }
+
+#nav-trigger:checked ~ #wrapper {
+	left: 200px;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+h1 {
+	flex:0 1 90%;
+	font-size: 50px;
+	font-size: 8vw;
+	padding: 30px 10px 0;
+	padding: 3vw 10px 0;
+	display: block;
+	text-align: center;				
+}
+
+span, a, a:hover {
+	background: black;
+	color: white;
+	padding:0 10px;
+}
+
+#main-link {
+	display: inline-block;
+	margin:5vw 0;
+	transform: translateZ(0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	text-transform: uppercase;
+	padding:0 10px;
+}
+
+#main-link:hover {
+	animation-name: pulse;
+	animation-duration: 0.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+h1 span:nth-of-type(1) {
+	transform: rotate(-1deg);
+	display: inline-block;
+}
+
+h1 span:nth-of-type(2){
+	font-size:50%;
+	display: inline-block;
+}
+
+h1 span a, h1 span a:hover {
+	padding:0;
+	margin:0;
+}
+
+footer a {
+	font-size: 28px;
+	font-size: 2vw;
+	position: absolute;
+}
+
+#credits, #credits:hover, #credits:focus {
+	left:15px;
+	bottom:15px;
+	background:none;
+	border-radius:50px;
+	width:30px;
+	height:30px;
+	padding-top:7px;
+	background: rgba(255,255,255,0.9);
+	opacity:.4;
+}
+
+#credits:hover, #credits:focus {
+	opacity: 1;
+}
+
+#img-credits {
+	bottom:15px;
+	right:15px;
+	padding:0 3px;
+}
+
+footer svg {fill:#fff; width:2vw;height:2vw;}
+#credits svg {width:15px;height:15px;}

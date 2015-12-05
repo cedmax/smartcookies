@@ -12,7 +12,7 @@ app.engine( 'html', require( 'hogan-express' ));
 app.use( require( 'express-autoprefixer' )( { browsers: 'last 2 versions', cascade: false } )).use( express.static( __dirname + '/assets' ));
 
 function getContent ( data, patterns, reqPattern ) {
-	var obj = JSON.parse(JSON.stringify(data[reqPattern]));
+	var obj = JSON.parse( JSON.stringify( data[reqPattern] ));
 	return extend( obj, {
 		pattern: data[reqPattern].pattern || reqPattern,
 		image: data[reqPattern].image || reqPattern,
@@ -25,7 +25,7 @@ function getContent ( data, patterns, reqPattern ) {
 	} );
 }
 
-var dataJSon = JSON.stringify(data);
+var dataJSon = JSON.stringify( data );
 
 app.get( '/:pattern?', function ( req, res ) {
 	var reqPattern,
