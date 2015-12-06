@@ -55,6 +55,18 @@
 		"url": "http://www.sciencealert.com/scientists-have-found-a-link-between-low-intelligence-and-believing-philosophical-quotes",
 		"imgCredits": "http://suburbanmen.com/best-photos-of-the-week-pt-1-20150301/49826"
 	},
+	"atheists": {
+		"url": "https://www.youtube.com/watch?v=v99zBMY3j_c",
+		"imgCredits":"http://geekswithoutgod.com/"
+	},
+	"liberals": {
+		"url": "https://www.youtube.com/watch?v=v99zBMY3j_c",
+		"imgCredits":"http://history.howstuffworks.com/historical-events/french-revolution.htm"
+	},
+	"charming": {
+		"url": "http://www.ncbi.nlm.nih.gov/pubmed/11276907",
+		"imgCredits":"http://www.esquire.com/lifestyle/advice/a8010/how-to-be-charming-to-women-0810/"
+	},
 	"404": {
 		"pattern": "so not like that!",
 		"url": "/",
