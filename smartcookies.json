@@ -67,6 +67,10 @@
 		"url": "http://www.ncbi.nlm.nih.gov/pubmed/11276907",
 		"imgCredits":"http://www.esquire.com/lifestyle/advice/a8010/how-to-be-charming-to-women-0810/"
 	},
+	"drummers": {
+		"url":"http://www.telegraph.co.uk/news/uknews/1895839/Drummers-are-natural-intellectuals.html",
+		"imgCredits":"http://www.aux.tv/2014/05/drummers-brains-different/"
+	},
 	"404": {
 		"pattern": "so not like that!",
 		"url": "/",
