@@ -3,12 +3,32 @@
 	delete data['404'];
 
 	var original = document.location.pathname.replace( '/', '' );
-	var pagesAvailable = getAvailablePages();
-	preloadNext();
+	
+	var availablePages = ( function( data ) {
+		var pagesAvailable = [];
 
-	function getAvailablePages() {
-		return Object.keys( data ).sort( function() { return 0.5 - Math.random() } );
-	}
+		function update() {
+			if ( !pagesAvailable.length ) {
+				pagesAvailable = Object.keys( data ).sort( function() { return 0.5 - Math.random() } );	
+			}
+		}
+		
+		return {
+			get: function() {
+				update();
+				return pagesAvailable.shift();
+			},
+			del: function( toDelete ) {
+				pagesAvailable.splice( pagesAvailable.indexOf( toDelete ), 1 );
+			},
+			next: function() {
+				update();
+				return pagesAvailable[0];
+			}
+		}
+	} )( data );
+
+	preloadImg( availablePages.next() );
 
 	function setDefaults( object, pattern ) {
 		object[pattern].image = object[pattern].image || pattern;
@@ -16,11 +36,8 @@
 		return object;
 	}
 
-	function preloadNext() {
-		if ( pagesAvailable.length ) {
-			var img = new Image();
-			img.src = '/images/' + pagesAvailable[0] + '.jpg';
-		}
+	function preloadImg( next ) {
+		( new Image()).src = '/images/' + next + '.jpg';
 	}
 
 	function updatePage( eventState ) {
@@ -33,7 +50,7 @@
 		document.getElementById( 'img-credits' ).href = eventState.imgCredits;
 		document.getElementsByClassName( 'nav-item--selected' )[0].classList.remove( 'nav-item--selected' );
 		
-		preloadNext();
+		preloadImg( availablePages.next() );
 
 		Array.prototype.filter.call( document.getElementsByClassName( 'nav-item' ), function( menuitem ) {
 			return menuitem.innerHTML.indexOf( eventState.pattern ) > -1;
@@ -56,15 +73,12 @@
 	} );
 
 	document.getElementById( 'also' ).addEventListener( 'click', function( e ) {
-		if ( !pagesAvailable.length ) {
-			pagesAvailable = getAvailablePages();
-		}
-		enableNavigation( e, pagesAvailable.shift());
+		enableNavigation( e, availablePages.get());
 	} );
 
 	document.getElementById( 'navigation' ).addEventListener( 'click', function( e ) {
 		var destination = e.target.innerHTML;
-		pagesAvailable.splice( pagesAvailable.indexOf( destination ), 1 );
+		availablePages.del( destination );
 		enableNavigation( e, destination );
 	} );
 
