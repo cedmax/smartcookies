@@ -3,5 +3,6 @@
 	"requirePaddingNewlinesInBlocks": null,
 	"requireLineFeedAtFileEnd": null,
 	"requirePaddingNewLinesAfterUseStrict": true,
-	"requireSpacesInsideParentheses": "allButNested"
+	"requireSpacesInsideParentheses": "allButNested",
+	"disallowKeywords": null
 }
