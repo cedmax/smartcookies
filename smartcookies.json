@@ -71,6 +71,18 @@
 		"url":"http://www.telegraph.co.uk/news/uknews/1895839/Drummers-are-natural-intellectuals.html",
 		"imgCredits":"http://www.aux.tv/2014/05/drummers-brains-different/"
 	},
+	"immigrants": {
+		"url": "http://www.bdlive.co.za/business/innovation/2016/01/18/the-secret-of-immigrant-genius",
+		"imgCredits": "https://www.flickr.com/photos/mig/343837586"
+	},
+	"monkey": {
+		"url": "http://www.japantimes.co.jp/news/2016/01/18/asia-pacific/social-issues-asia-pacific/clever-monkeys-baby-drive-may-boost-births-in-china/",
+		"imgCredits": "http://kungfupanda.wikia.com/wiki/File:Young-monkey.jpg"
+	},
+	"distracted":{
+		"url": "http://www.dailymail.co.uk/news/article-3405772/Easily-distracted-work-Maybe-clever-Intelligent-people-difficulty-prioritising-tasks-workers-check-phone-200-times-day.html",
+		"imgCredits": "https://uk.pinterest.com/pin/525584218991969359/"
+	},
 	"404": {
 		"pattern": "so not like that!",
 		"url": "/",
