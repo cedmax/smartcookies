@@ -42,7 +42,7 @@
 	"lefty": {
 		"url": "http://www.newyorker.com/tech/elements/sinister-minds-are-left-handed-people-smarter",
 		"imgCredits": "https://en.wikipedia.org/wiki/The_Simpsons"
-	}, 
+	},
 	"firstborn": {
 		"url": "http://www.bbc.co.uk/news/health-34700739",
 		"imgCredits": "http://www.today.com/health/firstborn-girl-scientists-find-one-unexpected-disadvantage-t40921"
@@ -87,6 +87,10 @@
 		"url": "http://www.puckermob.com/lifestyle/sorry-but-sarcastic-people-are-actually-smarter-than-you-are",
 		"imgCredits": "https://www.pinterest.com/pin/494692340289928297/"
 	},
+	"crazy-socked": {
+		"url": "http://www.yourtango.com/2016285660/people-who-wear-crazy-socks-are-smart-revolutionary",
+		"imgCredits": "http://www.yourtango.com/2016285660/people-who-wear-crazy-socks-are-smart-revolutionary"
+	},
 	"404": {
 		"pattern": "so not like that!",
 		"url": "/",
@@ -94,4 +98,3 @@
 		"imgCredits": "http://blogs.telegraph.co.uk/news/benedictbrogan/100079076/lets-talk-about-savings-instead/"
 	}
 }
-
