@@ -91,6 +91,18 @@
 		"url": "http://www.yourtango.com/2016285660/people-who-wear-crazy-socks-are-smart-revolutionary",
 		"imgCredits": "http://www.yourtango.com/2016285660/people-who-wear-crazy-socks-are-smart-revolutionary"
 	},
+	"quiet": {
+		"url": "http://elitedaily.com/life/culture/quiet-ones-more-intelligent/1112725/",
+		"imgCredits": "https://thedigitalfrontline.com/2013/12/12/shut-up-and-listen/"
+	},
+	"healthy": {
+		"url": "http://www.dailymail.co.uk/sciencetech/article-3418894/Always-sick-probably-not-smart-Intelligent-people-healthier-genetically-likely-catch-diseases.html",
+		"imgCredits": "http://www.animamia.net/nino-castelnuovo-che-salta-la-staccionata-per-olio-cuore/"
+	},
+	"long-lived": {
+		"url": "http://www.telegraph.co.uk/news/worldnews/europe/italy/2111096/Clever-people-could-live-15-years-longer.html",
+		"imgCredits": "http://www.bagnet.org/news/society/193707"
+	},
 	"404": {
 		"pattern": "so not like that!",
 		"url": "/",
