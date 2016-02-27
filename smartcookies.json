@@ -103,6 +103,10 @@
 		"url": "http://www.telegraph.co.uk/news/worldnews/europe/italy/2111096/Clever-people-could-live-15-years-longer.html",
 		"imgCredits": "http://www.bagnet.org/news/society/193707"
 	},
+	"scatterbrained":{
+		"url": "http://elitedaily.com/life/scatterbrained-more-intelligent/1238986/",
+		"imgCredits": "https://www.livingdeco.it/it/foto-murali/abstract/testa-tra-le-nuvole.php"
+	},
 	"404": {
 		"pattern": "so not like that!",
 		"url": "/",
