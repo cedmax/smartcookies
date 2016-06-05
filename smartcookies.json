@@ -107,6 +107,10 @@
 		"url": "http://elitedaily.com/life/scatterbrained-more-intelligent/1238986/",
 		"imgCredits": "https://www.livingdeco.it/it/foto-murali/abstract/testa-tra-le-nuvole.php"
 	},
+	"chocolovers": {
+		"url": "http://www.telegraph.co.uk/news/health/news/12187042/Chocolate-makes-you-smarter-study-suggests.html",
+		"imgCredits": "http://bitofthegoodstuff.com/category/buddhism-meditation/"
+	},
 	"404": {
 		"pattern": "so not like that!",
 		"url": "/",
