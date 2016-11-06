@@ -1,124 +1,124 @@
 {
-	"drunkaholic": {
-		"url": "https://www.psychologytoday.com/blog/the-scientific-fundamentalist/201010/why-intelligent-people-drink-more-alcohol",
-		"imgCredits": "https://www.flickr.com/photos/jbcurio/4037386893"
-	},
-	"slack": {
-		"url": "http://www.metronews.ca/views/just-saying/2013/12/10/hypnagogia-naps-arent-lazy-any-more-theyre-genius.html",
-		"imgCredits": "https://www.nbrii.com/blog/how-to-identify-a-slacker/"
-	}
-	"schizophrenic": {
-		"url": "http://www.lifehack.org/334241/why-people-who-talk-themselves-are-geniuses-according-scientists",
-		"imgCredits": "http://www.iran-daily.com/News/118708.html"
+	"404": {
+		"image": "404",
+		"imgCredits": "http://blogs.telegraph.co.uk/news/benedictbrogan/100079076/lets-talk-about-savings-instead/",
+		"pattern": "so not like that!",
+		"url": "/"
 	},
 	"a-holes": {
-		"url": "http://www.spring.org.uk/2012/02/the-dark-side-of-creativity.php",
-		"imgCredits": "https://twitter.com/pissedoffanakin"
-	},
-	"insomniac": {
-		"url": "http://elitedaily.com/life/culture/night-owls-creative-intelligent/686025/",
-		"imgCredits": "http://www.hypnotherapyoxford.org/hypnotherapy/sleep-problems/"
-	},
-	"misophonic": {
-		"url": "http://www.telegraph.co.uk/food-and-drink/news/why-being-unable-to-stand-noisy-eaters-might-make-you-a-genius/",
-		"imgCredits": "http://www.unilad.co.uk/articles/getting-annoyed-by-chewing-noises-is-supposedly-a-genuine-psychiatric-disorder/"
-	},
-	"curvy": {
-		"url": "http://www.smartbeautyguide.com/news/body-contouring/research-shows-link-buttock-size-intelligence",
-		"imgCredits": "https://www.youtube.com/watch?v=LDZX4ooRsWs"
-	},
-	"blue-eyed": {
-		"url": "http://www.telegraph.co.uk/news/science/science-news/3304030/Blue-eyes-could-mean-you-are-brainy.html",
-		"imgCredits": "https://en.wikipedia.org/wiki/Village_of_the_Damned_%281995_film%29"
-	},
-	"unemployed": {
-		"url": "http://www.cbsnews.com/news/why-geniuses-dont-have-jobs/",
-		"imgCredits": "http://www.telegraph.co.uk/news/politics/8939755/Social-Attitudes-research-Britons-lose-sympathy-for-unemployed-as-they-become-more-self-reliant.html"
-	},
-	"sloppy": {
-		"url": "http://www.mirror.co.uk/news/ampp3d/wearing-same-t-shirt-everyday-could-4585070",
-		"imgCredits": "http://www.trendysturvsblog.com/2014/11/why-i-wear-the-same-t-shirt-every-day-facebooks-mark-zuckerberg/"
-	},
-	"neurotic": {
-		"url": "http://www.sciencedaily.com/releases/2015/08/150827130134.htm",
-		"imgCredits": "http://farmamir.ru/2015/04/depressiya-ustalost-vozmozhno-vam-ne-xvataet-vitaminov/"
-	},
-	"lefty": {
-		"url": "http://www.newyorker.com/tech/elements/sinister-minds-are-left-handed-people-smarter",
-		"imgCredits": "https://en.wikipedia.org/wiki/The_Simpsons"
-	},
-	"firstborn": {
-		"url": "http://www.bbc.co.uk/news/health-34700739",
-		"imgCredits": "http://www.today.com/health/firstborn-girl-scientists-find-one-unexpected-disadvantage-t40921"
-	},
-	"cat-lovers":{
-		"url": "http://www.dailymail.co.uk/sciencetech/article-2643850/Does-pet-reveal-INTELLIGENCE-Cat-lovers-smarter-dog-owners-study-claims.html",
-		"imgCredits": "http://kathln.com/cat-themed-gift-ideas-for-cat-lovers/"
-	},
-	"discerning":{
-		"url": "http://www.sciencealert.com/scientists-have-found-a-link-between-low-intelligence-and-believing-philosophical-quotes",
-		"imgCredits": "http://suburbanmen.com/best-photos-of-the-week-pt-1-20150301/49826"
+		"imgCredits": "https://twitter.com/pissedoffanakin",
+		"url": "http://www.spring.org.uk/2012/02/the-dark-side-of-creativity.php"
 	},
 	"atheists": {
-		"url": "https://www.youtube.com/watch?v=v99zBMY3j_c",
-		"imgCredits":"http://darnellsmith.com/why-i-raise-my-children-without-god/"
+		"imgCredits": "http://darnellsmith.com/why-i-raise-my-children-without-god/",
+		"url": "https://www.youtube.com/watch?v=v99zBMY3j_c"
 	},
-	"liberals": {
-		"url": "https://www.youtube.com/watch?v=v99zBMY3j_c",
-		"imgCredits":"http://history.howstuffworks.com/historical-events/french-revolution.htm"
+	"blue-eyed": {
+		"imgCredits": "https://en.wikipedia.org/wiki/Village_of_the_Damned_%281995_film%29",
+		"url": "http://www.telegraph.co.uk/news/science/science-news/3304030/Blue-eyes-could-mean-you-are-brainy.html"
+	},
+	"cat-lovers": {
+		"imgCredits": "http://kathln.com/cat-themed-gift-ideas-for-cat-lovers/",
+		"url": "http://www.dailymail.co.uk/sciencetech/article-2643850/Does-pet-reveal-INTELLIGENCE-Cat-lovers-smarter-dog-owners-study-claims.html"
 	},
 	"charming": {
-		"url": "http://www.ncbi.nlm.nih.gov/pubmed/11276907",
-		"imgCredits":"http://www.esquire.com/lifestyle/advice/a8010/how-to-be-charming-to-women-0810/"
-	},
-	"drummers": {
-		"url":"http://www.telegraph.co.uk/news/uknews/1895839/Drummers-are-natural-intellectuals.html",
-		"imgCredits":"http://www.aux.tv/2014/05/drummers-brains-different/"
-	},
-	"immigrants": {
-		"url": "http://www.bdlive.co.za/business/innovation/2016/01/18/the-secret-of-immigrant-genius",
-		"imgCredits": "https://www.flickr.com/photos/mig/343837586"
-	},
-	"monkey": {
-		"url": "http://www.japantimes.co.jp/news/2016/01/18/asia-pacific/social-issues-asia-pacific/clever-monkeys-baby-drive-may-boost-births-in-china/",
-		"imgCredits": "http://kungfupanda.wikia.com/wiki/File:Young-monkey.jpg"
-	},
-	"distracted":{
-		"url": "http://www.dailymail.co.uk/news/article-3405772/Easily-distracted-work-Maybe-clever-Intelligent-people-difficulty-prioritising-tasks-workers-check-phone-200-times-day.html",
-		"imgCredits": "https://uk.pinterest.com/pin/525584218991969359/"
-	},
-	"sarcastic":{
-		"url": "http://www.puckermob.com/lifestyle/sorry-but-sarcastic-people-are-actually-smarter-than-you-are",
-		"imgCredits": "https://www.pinterest.com/pin/494692340289928297/"
-	},
-	"crazy-socked": {
-		"url": "http://www.yourtango.com/2016285660/people-who-wear-crazy-socks-are-smart-revolutionary",
-		"imgCredits": "http://www.yourtango.com/2016285660/people-who-wear-crazy-socks-are-smart-revolutionary"
-	},
-	"quiet": {
-		"url": "http://elitedaily.com/life/culture/quiet-ones-more-intelligent/1112725/",
-		"imgCredits": "https://thedigitalfrontline.com/2013/12/12/shut-up-and-listen/"
-	},
-	"healthy": {
-		"url": "http://www.dailymail.co.uk/sciencetech/article-3418894/Always-sick-probably-not-smart-Intelligent-people-healthier-genetically-likely-catch-diseases.html",
-		"imgCredits": "http://www.animamia.net/nino-castelnuovo-che-salta-la-staccionata-per-olio-cuore/"
-	},
-	"long-lived": {
-		"url": "http://www.telegraph.co.uk/news/worldnews/europe/italy/2111096/Clever-people-could-live-15-years-longer.html",
-		"imgCredits": "http://www.bagnet.org/news/society/193707"
-	},
-	"scatterbrained":{
-		"url": "http://elitedaily.com/life/scatterbrained-more-intelligent/1238986/",
-		"imgCredits": "https://www.livingdeco.it/it/foto-murali/abstract/testa-tra-le-nuvole.php"
+		"imgCredits": "http://www.esquire.com/lifestyle/advice/a8010/how-to-be-charming-to-women-0810/",
+		"url": "http://www.ncbi.nlm.nih.gov/pubmed/11276907"
 	},
 	"chocolovers": {
-		"url": "http://www.telegraph.co.uk/news/health/news/12187042/Chocolate-makes-you-smarter-study-suggests.html",
-		"imgCredits": "http://bitofthegoodstuff.com/category/buddhism-meditation/"
+		"imgCredits": "http://bitofthegoodstuff.com/category/buddhism-meditation/",
+		"url": "http://www.telegraph.co.uk/news/health/news/12187042/Chocolate-makes-you-smarter-study-suggests.html"
 	},
-	"404": {
-		"pattern": "so not like that!",
-		"url": "/",
-		"image": "404",
-		"imgCredits": "http://blogs.telegraph.co.uk/news/benedictbrogan/100079076/lets-talk-about-savings-instead/"
+	"crazy-socked": {
+		"imgCredits": "http://www.yourtango.com/2016285660/people-who-wear-crazy-socks-are-smart-revolutionary",
+		"url": "http://www.yourtango.com/2016285660/people-who-wear-crazy-socks-are-smart-revolutionary"
+	},
+	"curvy": {
+		"imgCredits": "https://www.youtube.com/watch?v=LDZX4ooRsWs",
+		"url": "http://www.smartbeautyguide.com/news/body-contouring/research-shows-link-buttock-size-intelligence"
+	},
+	"discerning": {
+		"imgCredits": "http://suburbanmen.com/best-photos-of-the-week-pt-1-20150301/49826",
+		"url": "http://www.sciencealert.com/scientists-have-found-a-link-between-low-intelligence-and-believing-philosophical-quotes"
+	},
+	"distracted": {
+		"imgCredits": "https://uk.pinterest.com/pin/525584218991969359/",
+		"url": "http://www.dailymail.co.uk/news/article-3405772/Easily-distracted-work-Maybe-clever-Intelligent-people-difficulty-prioritising-tasks-workers-check-phone-200-times-day.html"
+	},
+	"drummers": {
+		"imgCredits": "http://www.aux.tv/2014/05/drummers-brains-different/",
+		"url": "http://www.telegraph.co.uk/news/uknews/1895839/Drummers-are-natural-intellectuals.html"
+	},
+	"drunkaholic": {
+		"imgCredits": "https://www.flickr.com/photos/jbcurio/4037386893",
+		"url": "https://www.psychologytoday.com/blog/the-scientific-fundamentalist/201010/why-intelligent-people-drink-more-alcohol"
+	},
+	"firstborn": {
+		"imgCredits": "http://www.today.com/health/firstborn-girl-scientists-find-one-unexpected-disadvantage-t40921",
+		"url": "http://www.bbc.co.uk/news/health-34700739"
+	},
+	"healthy": {
+		"imgCredits": "http://www.animamia.net/nino-castelnuovo-che-salta-la-staccionata-per-olio-cuore/",
+		"url": "http://www.dailymail.co.uk/sciencetech/article-3418894/Always-sick-probably-not-smart-Intelligent-people-healthier-genetically-likely-catch-diseases.html"
+	},
+	"immigrants": {
+		"imgCredits": "https://www.flickr.com/photos/mig/343837586",
+		"url": "http://www.bdlive.co.za/business/innovation/2016/01/18/the-secret-of-immigrant-genius"
+	},
+	"insomniac": {
+		"imgCredits": "http://www.hypnotherapyoxford.org/hypnotherapy/sleep-problems/",
+		"url": "http://elitedaily.com/life/culture/night-owls-creative-intelligent/686025/"
+	},
+	"lefty": {
+		"imgCredits": "https://en.wikipedia.org/wiki/The_Simpsons",
+		"url": "http://www.newyorker.com/tech/elements/sinister-minds-are-left-handed-people-smarter"
+	},
+	"liberals": {
+		"imgCredits": "http://history.howstuffworks.com/historical-events/french-revolution.htm",
+		"url": "https://www.youtube.com/watch?v=v99zBMY3j_c"
+	},
+	"long-lived": {
+		"imgCredits": "http://www.bagnet.org/news/society/193707",
+		"url": "http://www.telegraph.co.uk/news/worldnews/europe/italy/2111096/Clever-people-could-live-15-years-longer.html"
+	},
+	"misophonic": {
+		"imgCredits": "http://www.unilad.co.uk/articles/getting-annoyed-by-chewing-noises-is-supposedly-a-genuine-psychiatric-disorder/",
+		"url": "http://www.telegraph.co.uk/food-and-drink/news/why-being-unable-to-stand-noisy-eaters-might-make-you-a-genius/"
+	},
+	"monkey": {
+		"imgCredits": "http://kungfupanda.wikia.com/wiki/File:Young-monkey.jpg",
+		"url": "http://www.japantimes.co.jp/news/2016/01/18/asia-pacific/social-issues-asia-pacific/clever-monkeys-baby-drive-may-boost-births-in-china/"
+	},
+	"neurotic": {
+		"imgCredits": "http://farmamir.ru/2015/04/depressiya-ustalost-vozmozhno-vam-ne-xvataet-vitaminov/",
+		"url": "http://www.sciencedaily.com/releases/2015/08/150827130134.htm"
+	},
+	"quiet": {
+		"imgCredits": "https://thedigitalfrontline.com/2013/12/12/shut-up-and-listen/",
+		"url": "http://elitedaily.com/life/culture/quiet-ones-more-intelligent/1112725/"
+	},
+	"sarcastic": {
+		"imgCredits": "https://www.pinterest.com/pin/494692340289928297/",
+		"url": "http://www.puckermob.com/lifestyle/sorry-but-sarcastic-people-are-actually-smarter-than-you-are"
+	},
+	"scatterbrained": {
+		"imgCredits": "https://www.livingdeco.it/it/foto-murali/abstract/testa-tra-le-nuvole.php",
+		"url": "http://elitedaily.com/life/scatterbrained-more-intelligent/1238986/"
+	},
+	"schizophrenic": {
+		"imgCredits": "http://www.iran-daily.com/News/118708.html",
+		"url": "http://www.lifehack.org/334241/why-people-who-talk-themselves-are-geniuses-according-scientists"
+	},
+	"slack": {
+		"imgCredits": "https://www.nbrii.com/blog/how-to-identify-a-slacker/",
+		"url": "http://www.metronews.ca/views/just-saying/2013/12/10/hypnagogia-naps-arent-lazy-any-more-theyre-genius.html"
+	},
+	"sloppy": {
+		"imgCredits": "http://www.trendysturvsblog.com/2014/11/why-i-wear-the-same-t-shirt-every-day-facebooks-mark-zuckerberg/",
+		"url": "http://www.mirror.co.uk/news/ampp3d/wearing-same-t-shirt-everyday-could-4585070"
+	},
+	"unemployed": {
+		"imgCredits": "http://www.telegraph.co.uk/news/politics/8939755/Social-Attitudes-research-Britons-lose-sympathy-for-unemployed-as-they-become-more-self-reliant.html",
+		"url": "http://www.cbsnews.com/news/why-geniuses-dont-have-jobs/"
 	}
 }
