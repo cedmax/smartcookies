@@ -6,7 +6,7 @@ const data = require( '../smartcookies.json' );
 
 function retrieveUrls(data, type) {
   return Object.keys(data)
-            .filter(key => key!=='404')
+            .filter(key => key!=='404' && data[key][type])
             .map(key => {
               return {
                 key,
@@ -16,10 +16,13 @@ function retrieveUrls(data, type) {
             });
 }
 
-urls = retrieveUrls(data, 'url')
-          .concat(retrieveUrls(data, 'imgCredits'))
-          .sort();
+const links = retrieveUrls(data, 'url');
+if (links.length !== Object.keys(data).length-1) {
+  console.log(`There's an article without URL`.red);
+  process.exit(1);
+}
 
+const urls = links.concat(retrieveUrls(data, 'imgCredits')).sort();
 var failed = false;
 const urlChecker = new broken.UrlChecker({}, {
   link: (result, data) => {
