@@ -47,7 +47,14 @@
 			href = eventState.url;
 			innerHTML = eventState.pattern;
 		}
-		document.getElementById( 'img-credits' ).href = eventState.imgCredits;
+		if ( eventState.imgCredits ) {
+			with (document.getElementById( 'img-credits' )) {
+				href = eventState.imgCredits;
+				style.visibility = 'visible';
+			}
+		} else {
+			document.getElementById( 'img-credits' ).style.visibility = 'hidden';
+		}
 		document.getElementsByClassName( 'nav-item--selected' )[ 0 ].classList.remove( 'nav-item--selected' );
 
 		preloadImg( availablePages.next() );
