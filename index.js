@@ -2,6 +2,13 @@ var express = require( 'express' );
 var settings = require( './settings.json' );
 var data = require( './smartcookies.json' );
 var extend = require( 'lodash.assign' );
+var fs = require('fs');
+var styleString = fs.readFileSync('./assets/css/style.css', 'utf-8')
+
+var postcss = require('postcss');
+var autoprefixer = require('autoprefixer'); 
+var css = postcss([autoprefixer({ browsers: 'last 2 versions', cascade: false })]).process(styleString).css;
+
 
 var app = express();
 
@@ -9,7 +16,7 @@ app.set( 'view engine', 'html' );
 app.set( 'views', __dirname + '/views' );
 app.enable( 'view cache' );
 app.engine( 'html', require( 'hogan-express' ));
-app.use( require( 'express-autoprefixer' )( { browsers: 'last 2 versions', cascade: false } )).use( express.static( __dirname + '/assets', { maxAge: '31 days' }));
+app.use( express.static( __dirname + '/assets', { maxAge: '31 days' }));
 
 function getContent ( data, patterns, reqPattern ) {
   var obj = JSON.parse( JSON.stringify( data[reqPattern] ));
@@ -40,10 +47,12 @@ app.get( '/:pattern?', function ( req, res ) {
     if ( !data[reqPattern] ) {
       reqPattern = '404';
       res.locals = getContent( data, patterns, reqPattern );
+      res.locals.style = css;
       res.status( 404 ).render( 'index' );
     } else {
       res.locals = getContent( data, patterns, reqPattern );
       res.locals.json = dataJSon;
+      res.locals.style = css;
       res.render( 'index' );
     }
   } else {
