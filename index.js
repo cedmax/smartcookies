@@ -27,6 +27,11 @@ function getContent ( data, patterns, reqPattern ) {
 
 var dataJSon = JSON.stringify( data );
 
+app.get( '/all-images', function ( req, res ) {    
+   res.locals = { images: Object.keys(data) };
+   res.render( 'images' );
+} );
+
 app.get( '/:pattern?', function ( req, res ) {
   var reqPattern,
     patterns = Object.keys( data );
@@ -46,5 +51,6 @@ app.get( '/:pattern?', function ( req, res ) {
     res.redirect( '/' + patterns[Math.floor( Math.random() * patterns.length )] );
   }
 } );
+
 
 var server = app.listen( settings.port );
