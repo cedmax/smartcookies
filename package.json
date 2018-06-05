@@ -21,7 +21,7 @@
     "broken-link-checker": "^0.7.3",
     "colors": "^1.1.2",
     "jscs": "^3.0.7",
-    "jsonlint": "^1.6.2",
+    "jsonlint-cli": "^1.0.1",
     "sort-json": "^1.4.0"
   }
 }
