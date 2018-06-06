@@ -48,7 +48,7 @@
 			innerHTML = eventState.pattern;
 		}
 		if ( eventState.imgCredits ) {
-			with (document.getElementById( 'img-credits' )) {
+			with ( document.getElementById( 'img-credits' ) ) {
 				href = eventState.imgCredits;
 				style.visibility = 'visible';
 			}
