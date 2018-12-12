@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "json": "jsonlint smartcookies.json --quiet && sort-json smartcookies.json",
     "fix": "jscs -x assets/js/*.js",
     "test": "npm run fix && npm run json && node scripts/test-content"
