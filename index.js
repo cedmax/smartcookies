@@ -1,5 +1,4 @@
 var express = require( 'express' );
-var settings = require( './settings.json' );
 var data = require( './smartcookies.json' );
 var extend = require( 'lodash.assign' );
 var fs = require('fs');
@@ -62,4 +61,4 @@ app.get( '/:pattern?', function ( req, res ) {
 } );
 
 
-var server = app.listen( settings.port );
+var server = app.listen( 80 );
