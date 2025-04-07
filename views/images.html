@@ -1,14 +1,17 @@
 <html>
-  <head>
-    <title>are you a smart cookie? - Images</title>  
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <meta property="og:image" content="http://smartcooki.es/images/{{image}}.jpg">
-  </head>
-  <body>
-    <ul>
-      {{#images}}
-        <img src="images/{{.}}.jpg" />
-      {{/images}}
-    </ul>
+
+<head>
+  <title>are you a smart cookie? - Images</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <meta property="og:image" content="https://smartcookies.dsgn.it/images/{{image}}.jpg">
+</head>
+
+<body>
+  <ul>
+    {{#images}}
+    <img src="images/{{.}}.jpg" />
+    {{/images}}
+  </ul>
+
 </html>
